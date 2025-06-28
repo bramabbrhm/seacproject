@@ -8,62 +8,117 @@
   <link rel="stylesheet" href="css/seac.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">SEA Catering</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">SEA Catering</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="homepage.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu / Meal Plans</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="subscribe.html">Subscription</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu / Meal Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subscribe.html">Subscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <header class="hero text-center">
-        <div class="container">
-            <h1>Welcome to SEA Catering</h1>
-            <p class="slogan">“Healthy Meals, Anytime, Anywhere”</p>
-            <p>We offer customizable healthy meal services with delivery across Indonesia.</p>
-        </div>
+      <div class="container py-5">
+        <h1>Welcome to SEA Catering</h1>
+        <p class="slogan fs-4">"Healthy Meals, Anytime, Anywhere"</p>
+        <p>We offer customizable healthy meal services with delivery across Indonesia.</p>
+      </div>
     </header>
-    
-    <section class="features text-center">
-        <div class="container">
-            <h2>Our Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Meal Customization</h3>
-                    <p>Choose your ingredients and create your perfect meal.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Delivery to Major Cities</h3>
-                    <p>Fast and reliable delivery to your doorstep.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Nutritional Information</h3>
-                    <p>Detailed nutritional information for every meal.</p>
-                </div>
+
+    <section class="features py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Key Features</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Meal Customization</h3>
+                <p class="card-text">Choose your ingredients and create your perfect meal.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Delivery to Major Cities</h3>
+                <p class="card-text">Fast and reliable delivery to your doorstep.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Nutritional Information</h3>
+                <p class="card-text">Detailed nutritional information for every meal.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <footer class="text-center">
-        <div class="container">
-            <h4>Contact Us</h4>
-            <p>Manager: Brian</p>
-            <p>Phone Number: 08123456789</p>
+
+    <section class="testimonials py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mx-auto" style="max-width: 600px;">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Budiono Siregar</h4>
+                  <div class="mb-3">
+                    ★★★★★
+                  </div>
+                  <p class="card-text">"The meals are delicious and always fresh. I've been using SEA Catering for 3 months now and love it!"</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mx-auto" style="max-width: 600px;">
+                <div class="card-body text-center">
+                  <h4 class="card-title">Rizky Arrizqullah</h4>
+                  <div class="mb-3">
+                    ★★★★☆
+                  </div>
+                  <p class="card-text">"Great variety of meals and excellent customer service. Delivery is always on time."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-light">
+      <div class="container text-center">
+        <h4>Contact Us</h4>
+        <p>Manager: Brian</p>
+        <p>Phone Number: 08123456789</p>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
