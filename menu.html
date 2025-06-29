@@ -32,31 +32,51 @@
     </nav>
 
     <header class="hero text-center">
-        <div class="container">
-            <h1>Welcome to SEA Catering</h1>
-            <p class="slogan">“Healthy Meals, Anytime, Anywhere”</p>
-            <p>We offer customizable healthy meal services with delivery across Indonesia.</p>
-        </div>
+      <div class="container py-5">
+        <h1>Our Meal Plans</h1>
+        <p class="slogan fs-4">"Healthy Meals, Anytime, Anywhere"</p>
+      </div>
     </header>
-    
-    <section class="features text-center">
-        <div class="container">
-            <h2>Our Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Meal Customization</h3>
-                    <p>Choose your ingredients and create your perfect meal.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Delivery to Major Cities</h3>
-                    <p>Fast and reliable delivery to your doorstep.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Nutritional Information</h3>
-                    <p>Detailed nutritional information for every meal.</p>
-                </div>
+
+    <section class="meal-plans py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Choose Your Perfect Plan</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200?text=Basic+Plan" class="card-img-top" alt="Basic Plan">
+              <div class="card-body">
+                <h3 class="card-title">Basic Plan</h3>
+                <h4 class="text-primary">IDR ......</h4>
+                <p class="card-text">Simple. Includes 5 meals per week.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicPlanModal">See Details</button>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200?text=Standard+Plan" class="card-img-top" alt="Standard Plan">
+              <div class="card-body">
+                <h3 class="card-title">Standard Plan</h3>
+                <h4 class="text-primary">IDR....</h4>
+                <p class="card-text">Balanced meals with more variety.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#standardPlanModal">See Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200?text=Premium+Plan" class="card-img-top" alt="Premium Plan">
+              <div class="card-body">
+                <h3 class="card-title">Premium Plan</h3>
+                <h4 class="text-primary">IDR ...../week</h4>
+                <p class="card-text">Gourmet meals with premium ingredients,</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#premiumPlanModal">See Details</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="text-center">
         <div class="container">
