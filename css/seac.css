@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    padding-top: 50px;
 }
 
 .hero {
@@ -13,12 +14,10 @@ body {
     font-style: italic;
 }
 
-.features, .meal-plans, .testimonials {
+.features,
+.meal-plans,
+.testimonials {
     padding: 50px 0;
-}
-
-.features h2 {
-    margin-bottom: 30px;
 }
 
 .card {
@@ -37,8 +36,27 @@ body {
     margin: 0 auto;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     width: 5%;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-box h4 {
+    font-weight: bold;
+}
+
+.contact-box .row+.row {
+    margin-top: 20px;
 }
 
 .modal-content {
@@ -50,6 +68,7 @@ body {
     border-bottom: none;
     padding-bottom: 0;
 }
+
 
 .modal-footer {
     border-top: none;
@@ -63,4 +82,23 @@ body {
 .btn-primary:hover {
     background-color: #4338ca;
     border-color: #4338ca;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
 }
